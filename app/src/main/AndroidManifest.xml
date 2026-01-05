@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.pakistanirestaurant">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.App.Light"
+        tools:targetApi="31">
+
+        <activity
+            android:name="com.example.pakistanirestaurant.activities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.example.pakistanirestaurant.activities.OnboardingActivity"
+            android:exported="false" />
+
+        <activity
+        android:name="com.example.pakistanirestaurant.activities.LoginActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.pakistanirestaurant.activities.SignupActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.pakistanirestaurant.activities.MainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.pakistanirestaurant.activities.FoodDetailActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.pakistanirestaurant.activities.WebViewActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.CartActivity"
+            android:label="@string/my_cart"
+            android:parentActivityName=".activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,19 @@
+
+
+        <!-- Add these strings to your strings.xml -->
+        <resources>
+            <string name="food_image_desc">Food item image</string>
+            <string name="favorite">Add to favorites</string>
+            <string name="rating">Rating</string>
+            <string name="prep_time">Preparation time</string>
+            <string name="calories">Calories</string>
+            <string name="serving">Serving size</string>
+            <string name="add_to_cart">Add to cart</string>
+          <string name="app_name">FoodieDelight</string>
+        <string name="empty_cart">Empty cart</string>
+        <string name="remove_item">Remove item</string>
+        <string name="decrease_quantity">Decrease quantity</string>
+        <string name="increase_quantity">Increase quantity</string>
+        <string name="my_cart">My Cart</string>
+
+        </resources>
